@@ -2,15 +2,76 @@
 
 	<head>
 	
-		Members Page
-	
+        <title>Members Page</title>
+			<style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: #C70039;
+            }
+                .congrat{
+                    width: auto;
+                    margin: auto;
+                }
+		.box {
+            color: #fff;
+            font-size: 1.5em;
+            font-family: Segoe UI;
+            padding-top: 3em;
+			width : 20em;
+            height: 10em;
+            border: 0 solid #FF5733;
+            text-align: center;
+            margin: auto;
+            background-color: #900C3F;
+            border-bottom: 4px solid #fff;
+    		}
+        .block{
+            color: #fff;
+            font-family: Segoe UI;
+            padding: 5px;
+            background-color: #900C3F;
+            width: 20em;
+            margin: auto;
+            margin-top: 5em;
+            border-bottom: 4px solid #fff;
+                }
+            h1{
+                font-family: Segoe UI;
+                color : #FFF;
+                text-align: center;
+            }
+            .inputnama{
+                padding: 0.5em;
+                border: 0px;
+                border-bottom: 4px solid #c70039;
+            }
+            .konfirmasi{
+                padding: 0.5em 1em 0.5em 1em;
+                border: 0px;
+                border-bottom: 4px solid #c70039;
+                background-color: #fff;
+                color: #c70039;
+                
+            }
+            .konfirmasi:hover{
+                padding: 0.5em 1em 0.5em 1em;
+                border: 0px;
+                border-bottom: 4px solid #fff;
+                background-color: #c70039;
+                color: #fff;
+            }
+		</style>
 	</head>
 	
 	<body>
 	
 		<div class='congrat'>
-			<h1>Haai {{nama}} !</h1><br>
-			Anda telah login pada tanggal {{date}} pukul {{time}}
+            <br>
+            <div class="block"><h1>Haai {{nama}}</div> !!</h1><br>
+			<div class="box">
+                <b>Anda telah login pada tanggal</b> <br>{{date}} <br><br><b>Pukul</b><br>{{time}}
+            </div>
 		</div>
 	
 	</body>
